@@ -9,5 +9,9 @@
 		"forceConsistentCasingInFileNames": true,
 		"baseUrl": "./",
 		"moduleResolution": "node",
+		"noImplicitAny": false,
 	},
+	"include": [
+		"generator.ts"
+	]
 }

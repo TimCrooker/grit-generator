@@ -1,4 +1,4 @@
-import {SAO, GeneratorConfig} from 'projenerator'
+import { GeneratorConfig} from 'projenerator'
 
 export default { 
 	prompts() {
