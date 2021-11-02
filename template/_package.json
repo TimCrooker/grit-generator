@@ -13,9 +13,9 @@
 		"template/**"
 	],
 	"scripts": {
-		"start": "projen . test",
+		"start": "projen . output",
 		"build": "tsc",
-		"test": "jest",
+		"test": "yarn build && jest",
 		"prepublishOnly": "yarn build"
 	},
 	"dependencies": {},

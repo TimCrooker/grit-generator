@@ -1,32 +1,32 @@
-# sao-generator
+# projen-generator
 
-A generator for scaffolding out a SAO generator.
+A generator for easily scaffolding out a new generator.
 
 ## Features
 
 - Bare minimal generator
-- Unit test with [AVA](https://ava.li)
+- Unit test with [JEST](https://jestjs.io)
 
 ## Usage
 
-Install [SAO](https://github.com/saojs/sao) first.
+Install [Projenerator](https://github.com/TimCrokoer/projenerator) first.
 
 ```bash
-yarn global add sao
+yarn global add projenerator
 # or
-npm i -g sao
+npm i -g projenerator
 ```
 
 ### From npm
 
 ```bash
-sao generator sao-name
+projen generator projen-<generatorName>
 ```
 
 ### From repo
 
 ```bash
-sao saojs/sao-generator sao-name
+projen TimCrooker/projen-generator projen-<generatorName>
 ```
 
 ## License

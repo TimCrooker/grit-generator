@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generator cascade 1`] = `
+Array [
+  ".gitignore",
+  "LICENSE",
+  "README.md",
+  "babel.config.js",
+  "generator.ts",
+  "jest.config.js",
+  "package.json",
+  "template/.editorconfig",
+  "template/.gitattributes",
+  "template/LICENSE",
+  "template/README.md",
+  "template/gitignore",
+  "test/test.ts",
+  "tsconfig.json",
+]
+`;

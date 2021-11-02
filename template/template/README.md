@@ -4,4 +4,4 @@
 
 ## License
 
-MIT &copy; <%= username %>
+MIT <%= username %>

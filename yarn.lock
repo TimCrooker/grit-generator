@@ -3814,10 +3814,10 @@ pretty-format@^27.0.0, pretty-format@^27.3.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-projenerator@^0.0.9-1:
-  version "0.0.9-1"
-  resolved "https://registry.yarnpkg.com/projenerator/-/projenerator-0.0.9-1.tgz#83fa5810c796bdb52a224ccb50c9900683d32c4e"
-  integrity sha512-9fkBhncbdkHmpQ86lVkPs8BSgrPiIpWjclpdyaREdtbj7Lxa04+Eh05aTb6zes+TL4Kebj/Kw6nOR5EBG8nj5w==
+projenerator@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/projenerator/-/projenerator-0.0.11.tgz#de5eae41d78721af4677ee4f0ed83bb315d7ad9b"
+  integrity sha512-/h8GDsX1bCsTMlslJTt7nOSi0ATn/L6g3etCQQJ7txVLpg3mWZJQ8jgYt/wDqBPJ6mMnUZueC4Mt5teqbTvx5w==
   dependencies:
     release-it "^14.11.6"
     rimraf "^3.0.2"

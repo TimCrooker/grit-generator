@@ -1,6 +1,6 @@
 {
 	"name": "projen-generator",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"description": "Scaffold out a new generator",
 	"files": [
 		"generator.js",
@@ -18,7 +18,7 @@
 		"@babel/preset-typescript": "^7.16.0",
 		"@types/jest": "^27.0.2",
 		"jest": "^27.3.1",
-		"projenerator": "^0.0.9-1",
+		"projenerator": "^0.0.11",
 		"typescript": "^4.4.4"
 	}
 }
