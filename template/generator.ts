@@ -1,21 +1,25 @@
-const superb = require('superb')
+import path from "path"
+import { GeneratorConfig } from "projenerator"
 
-module.exports = {
+export = {
   prompts() {
     return [
       {
         name: 'name',
+				type: 'input',
         message: 'What is the name of the new project',
-        default: this.outFolder,
-        filter: val => val.toLowerCase()
+        default: `${path.basename(this.outDir)}`,
+        filter: val => val.toLowerCase(),
       },
       {
         name: 'description',
-        message: 'How would you descripe the new project',
-        default: `my ${superb()} project`
+				type: 'input',
+        message: 'How would you describe the new template',
+        default: `my awesome NEW generator`
       },
       {
         name: 'username',
+				type: 'input',
         message: 'What is your GitHub username',
         default: this.gitUser.username || this.gitUser.name,
         filter: val => val.toLowerCase(),
@@ -23,15 +27,17 @@ module.exports = {
       },
       {
         name: 'email',
+				type: 'input',
         message: 'What is your email?',
         default: this.gitUser.email,
         store: true
       },
       {
         name: 'website',
+				type: 'input',
         message: 'The URL of your website',
-        default({ username }) {
-          return `github.com/${username}`
+        default(data) {
+          return `github.com/${data.answers.username}`
         },
         store: true
       }
@@ -45,7 +51,8 @@ module.exports = {
     {
       type: 'move',
       patterns: {
-        gitignore: '.gitignore'
+        gitignore: '.gitignore',
+				'_package.json': 'package.json'
       }
     }
   ],
@@ -54,4 +61,4 @@ module.exports = {
     await this.npmInstall()
     this.showProjectTips()
   }
-}
+} as GeneratorConfig

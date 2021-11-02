@@ -4,24 +4,24 @@
 
 ## Usage
 
-Install [SAO](https://github.com/saojs/sao) first.
+Install [Projenerator](https://github.com/TimCrooker/projenerator) first.
 
 ```bash
-yarn global add sao
+yarn global add projenerator
 # or
-npm i -g sao
+npm i -g projenerator
 ```
 
 ### From npm
 
 ```bash
-sao <%= name.replace('sao-', '') %> my-project
+projen <%= name.replace('projen-', '') %> my-project
 ```
 
 ### From git
 
 ```bash
-sao <%= username %>/<%= name %> my-project
+projen <%= username %>/<%= name %> my-project
 ```
 
 ## License

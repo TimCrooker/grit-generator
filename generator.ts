@@ -1,21 +1,22 @@
 import { GeneratorConfig} from 'projenerator'
+import path from 'path'
 
-export default { 
+export = { 
 	prompts() {
     return [
       {
         name: 'name',
 				type: 'input',
-        message: 'What is the name of the new generator (must be sao-*)',
-        default: `sao-${this.outDir.replace(/^sao-/, '')}`,
+        message: 'What is the name of the new generator (must be projen-*)',
+        default: `projen-${path.basename(this.outDir).replace(/^projen-/, '')}`,
         filter: val => val.toLowerCase(),
-        validate: val => val.startsWith('sao-')
+        validate: val => val.startsWith('projen-')
       },
       {
         name: 'description',
 				type: 'input',
         message: 'How would you describe the new template',
-        default: `my awesome SAO generator`
+        default: `my awesome NEW generator`
       },
       {
         name: 'username',
@@ -53,8 +54,6 @@ export default {
       type: 'move',
       patterns: {
         gitignore: '.gitignore',
-        // If we use `package.json` directly
-        // Then `template` folder will be treated as a package too, which isn't safe
         '_package.json': 'package.json'
       }
     }
