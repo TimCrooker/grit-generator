@@ -1,5 +1,5 @@
 {
-	"name": "projen-generator",
+	"name": "grit-generator",
 	"version": "0.0.5",
 	"description": "Scaffold out a new generator",
 	"files": [
