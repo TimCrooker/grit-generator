@@ -1,14 +1,14 @@
 import path from 'path'
-import { Projen } from 'projenerator'
+import { Grit } from 'grit-cli'
 
 const generator = path.join(__dirname, '..')
 
 test('defaults', async () => {
-	const projen = new Projen({
+	const grit = new Grit({
 		generator,
 		mock: true
 	})
-  await projen.run()
+  await grit.run()
 
-  expect(await projen.getOutputFiles()).toMatchSnapshot()
+  expect(await grit.getOutputFiles()).toMatchSnapshot()
 })

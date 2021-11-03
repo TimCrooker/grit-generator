@@ -4,26 +4,26 @@
 
 ## Usage
 
-Install [Projenerator](https://github.com/TimCrooker/projenerator) first.
+Install [Grit](https://github.com/TimCrooker/projenerator) first.
 
 ```bash
-yarn global add projenerator
+yarn global add grit-cli
 # or
-npm i -g projenerator
+npm i -g grit-cli
 ```
 
 ### From npm
 
 ```bash
-projen <%= name.replace('projen-', '') %> my-project
+grit <%= name.replace('grit-', '') %> my-project
 ```
 
 ### From git
 
 ```bash
-projen <%= username %>/<%= name %> my-project
+grit <%= username %>/<%= name %> my-project
 ```
 
 ## License
 
-MIT &copy; [<%= username %>](<%= website %>)
+MIT [<%= username %>](<%= website %>)

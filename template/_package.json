@@ -13,7 +13,7 @@
 		"template/**"
 	],
 	"scripts": {
-		"start": "projen . output",
+		"start": "grit . output",
 		"build": "tsc",
 		"test": "yarn build && jest",
 		"prepublishOnly": "yarn build"
@@ -24,7 +24,7 @@
 		"@babel/preset-typescript": "^7.16.0",
 		"@types/jest": "^27.0.2",
 		"jest": "^27.3.1",
-		"projenerator": "^0.0.9-1",
+		"grit-cli": "^0.0.2",
 		"typescript": "^4.4.4"
 	}
 }

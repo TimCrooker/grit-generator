@@ -1,5 +1,5 @@
 import path from "path"
-import { GeneratorConfig } from "projenerator"
+import { GeneratorConfig } from "grit-cli"
 
 export = {
   prompts() {
