@@ -9,8 +9,6 @@ Array [
   "generator.ts",
   "jest.config.js",
   "package.json",
-  "template/.editorconfig",
-  "template/.gitattributes",
   "template/LICENSE",
   "template/README.md",
   "template/gitignore",
