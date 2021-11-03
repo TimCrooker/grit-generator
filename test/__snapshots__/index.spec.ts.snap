@@ -16,3 +16,20 @@ Array [
   "tsconfig.json",
 ]
 `;
+
+exports[`Generator output 1`] = `
+Array [
+  ".gitignore",
+  "LICENSE",
+  "README.md",
+  "babel.config.js",
+  "generator.ts",
+  "jest.config.js",
+  "package.json",
+  "template/LICENSE",
+  "template/README.md",
+  "template/gitignore",
+  "test/test.ts",
+  "tsconfig.json",
+]
+`;

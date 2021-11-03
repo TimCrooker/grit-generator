@@ -1,12 +1,12 @@
-import { Projen } from "projenerator"
+import { Grit } from "grit-cli"
 import path from 'path'
 
-test('Generator cascade', async () => {
+test('Generator output', async () => {
 	// run the top level generator as not a mock and direct output to local fixtures
-	const genGen = new Projen({
+	const grit = new Grit({
 		generator: path.join(__dirname, "../"),
 		mock: true,
 	})
-	await genGen.run()
-	expect(await genGen.getOutputFiles()).toMatchSnapshot()
+	await grit.run()
+	expect(await grit.getOutputFiles()).toMatchSnapshot()
 })
