@@ -1,32 +1,34 @@
 # projen-generator
 
-A generator for easily scaffolding out a new generator.
+A generator for easily scaffolding out a new Grit generator.
 
 ## Features
 
 - Bare minimal generator
+- Typescript generator transpiling
+- Ready to publish to NPM
 - Unit test with [JEST](https://jestjs.io)
 
 ## Usage
 
-Install [Projenerator](https://github.com/TimCrokoer/projenerator) first.
+Install [Grit](https://github.com/TimCrooker/Grit) first.
 
 ```bash
-yarn global add projenerator
+yarn global add grit-cli
 # or
-npm i -g projenerator
+npm i -g grit-cli
 ```
 
 ### From npm
 
 ```bash
-projen generator projen-<generatorName>
+grit generator grit-<generatorName>
 ```
 
 ### From repo
 
 ```bash
-projen TimCrooker/projen-generator projen-<generatorName>
+grit TimCrooker/projen-generator grit-<generatorName>
 ```
 
 ## License

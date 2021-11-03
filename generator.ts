@@ -1,4 +1,4 @@
-import { GeneratorConfig} from 'projenerator'
+import { GeneratorConfig } from 'grit-cli'
 import path from 'path'
 
 export = { 
@@ -7,16 +7,16 @@ export = {
       {
         name: 'name',
 				type: 'input',
-        message: 'What is the name of the new generator (must be projen-*)',
-        default: `projen-${path.basename(this.outDir).replace(/^projen-/, '')}`,
+        message: 'What is the name of the new generator (must be grit-*)',
+        default: `grit-${path.basename(this.outDir).replace(/^grit-/, '')}`,
         filter: val => val.toLowerCase(),
-        validate: val => val.startsWith('projen-')
+        validate: val => val.startsWith('grit-')
       },
       {
         name: 'description',
 				type: 'input',
         message: 'How would you describe the new template',
-        default: `my awesome NEW generator`
+        default: `my awesome new Grit generator`
       },
       {
         name: 'username',
