@@ -39,8 +39,8 @@ module.exports = {
                 name: 'website',
                 type: 'input',
                 message: 'The URL of your website',
-                default(data) {
-                    return `github.com/${data.answers.username}`;
+                default(answers) {
+                    return `github.com/${answers.username}`;
                 },
                 store: true
             }
