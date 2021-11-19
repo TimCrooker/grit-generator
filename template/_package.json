@@ -8,6 +8,10 @@
 	},
 	"author": "<%= username %> <<%= email %>> (<%= website %>)",
 	"license": "MIT",
+	"keywords": [
+		"grit-generator",
+		"grit"
+	],
 	"files": [
 		"generator.js",
 		"template/**"

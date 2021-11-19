@@ -1,6 +1,6 @@
 {
 	"name": "grit-generator",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Scaffold out a new generator",
 	"files": [
 		"generator.js",
@@ -12,6 +12,10 @@
 		"prepublishOnly": "yarn build"
 	},
 	"license": "MIT",
+	"keywords": [
+		"grit-generator",
+		"grit"
+	],
 	"dependencies": {
 		"grit-cli": "^0.1.2"
 	},
