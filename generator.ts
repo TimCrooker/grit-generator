@@ -2,65 +2,54 @@ import { GeneratorConfig } from 'grit-cli'
 import path from 'path'
 
 export = { 
-	prompts() {
-    return [
-      {
+	prompts(grit) {
+      this.input({
         name: 'name',
-				type: 'input',
-        message: 'What is the name of the new generator (must be grit-*)',
-        default: `grit-${path.basename(this.outDir).replace(/^grit-/, '')}`,
+        message: 'What is the name of the project',
+        default: path.basename(grit.outDir),
         filter: val => val.toLowerCase(),
-        validate: val => val.startsWith('grit-')
-      },
-      {
+      }),
+      this.input({
         name: 'description',
-				type: 'input',
-        message: 'How would you describe the new template',
-        default: `my awesome new Grit generator`
-      },
-      {
+        message: 'How would you describe the project',
+        default: `my awesome new project`,
+      }),
+      this.input({
         name: 'username',
-				type: 'input',
         message: 'What is your GitHub username',
-        default: this.gitUser.username || this.gitUser.name,
+        default: grit.gitUser.username || grit.gitUser.name,
         filter: val => val.toLowerCase(),
         store: true
-      },
-      {
+      }),
+      this.input({
         name: 'email',
-				type: 'input',
         message: 'What is your email?',
-        default: this.gitUser.email,
+        default: grit.gitUser.email,
         store: true
-      },
-      {
+      }),
+      this.input({
         name: 'website',
-				type: 'input',
         message: 'The URL of your website',
         default(answers) {
           return `github.com/${answers.username}`
         },
         store: true
-      }
-    ]
+      })
   },
-  actions: [
-    {
-      type: 'add',
+  actions() {
+    this.add({
       files: '**',
-      transformExclude: 'template/**'
-    },
-    {
-      type: 'move',
+    }),
+    this.move({
       patterns: {
         gitignore: '.gitignore',
         '_package.json': 'package.json'
       }
-    }
-  ],
-  async completed() {
-    this.gitInit()
-    await this.npmInstall()
-    this.showProjectTips()
+    })
+	},
+  async completed(grit) {
+    grit.gitInit()
+    await grit.npmInstall()
+    grit.showProjectTips()
   }
 } as GeneratorConfig

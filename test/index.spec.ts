@@ -1,4 +1,4 @@
-import { getGenerator } from "grit-cli"
+import { getGenerator } from 'grit-cli';
 import path from 'path'
 
 const generator = path.resolve(__dirname, '../')
@@ -7,6 +7,7 @@ describe('Generator variations', () => {
 	it('Should render with plugins', async () => {
 		const grit = await getGenerator({
 			generator,
+			mock: true,
 			answers: {
 				name: 'test',
 				description: 'test',
