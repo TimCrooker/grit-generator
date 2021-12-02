@@ -9,7 +9,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"baseUrl": "./",
 		"moduleResolution": "node",
-		"noImplicitAny": false,
+		"noImplicitAny": false
 	},
 	"include": [
 		"generator.ts"

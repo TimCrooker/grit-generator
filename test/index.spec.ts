@@ -1,12 +1,43 @@
-import { Grit } from "grit-cli"
+import { getGenerator } from "grit-cli"
 import path from 'path'
 
-test('Generator output', async () => {
-	// run the top level generator as not a mock and direct output to local fixtures
-	const grit = new Grit({
-		generator: path.join(__dirname, "../"),
-		mock: true,
+const generator = path.resolve(__dirname, '../')
+
+describe('Generator variations', () => {
+	it('Should render with plugins', async () => {
+		const grit = await getGenerator({
+			generator,
+			answers: {
+				name: 'test',
+				description: 'test',
+				pluginTemplate: true,
+				username: 'test',
+				email: 'test',
+				website: 'test',
+			}
+		})
+		await grit.run()
+	
+		expect(await grit.getOutputFiles()).toMatchSnapshot()
 	})
-	await grit.run()
-	expect(await grit.getOutputFiles()).toMatchSnapshot()
-})
+	
+	it('Should render without plugins', async () => {
+		const grit = await getGenerator({
+			generator,
+			mock: true,
+			answers: {
+				name: 'test',
+				description: 'test',
+				pluginTemplate: false,
+				username: 'test',
+				email: 'test',
+				website: 'test',
+			}
+		})
+		await grit.run()
+	
+		expect(await grit.getOutputFiles()).toMatchSnapshot()
+	})
+});
+
+
