@@ -1,31 +1,34 @@
 {
-	"name": "grit-generator",
-	"version": "0.2.0",
-	"description": "Scaffold out a new generator",
-	"license": "MIT",
-	"keywords": [
-		"grit-generator",
-		"grit"
-	],
-	"files": [
-		"generator.js",
-		"generator.ts",
-		"template/**",
-		"plugins/**"
-	],
-	"scripts": {
-		"start": "grit . output",
-		"test": "jest",
-		"prepublishOnly": "yarn test"
-	},
-	"dependencies": {
-		"grit-cli": "^0.3.5"
-	},
-	"devDependencies": {
-		"@babel/preset-env": "^7.16.0",
-		"@babel/preset-typescript": "^7.16.0",
-		"@types/jest": "^27.0.2",
-		"jest": "^27.3.1",
-		"typescript": "^4.4.4"
-	}
+  "name": "grit-generator",
+  "version": "0.2.0",
+  "description": "Scaffold out a new generator",
+  "license": "MIT",
+  "keywords": [
+    "grit-generator",
+    "grit"
+  ],
+  "files": [
+    "generator.js",
+    "generator.ts",
+    "template/**",
+    "plugins/**"
+  ],
+  "scripts": {
+    "start": "grit . output",
+    "test": "jest",
+    "prepublishOnly": "yarn test",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "grit-cli": "^0.3.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "typescript": "^4.4.4",
+    "release-it": "^14.11.8"
+  },
+  "bimbo": true
 }

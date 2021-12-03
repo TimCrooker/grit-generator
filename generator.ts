@@ -14,6 +14,12 @@ export = {
         message: 'How would you describe the project',
         default: `my awesome new project`,
       }),
+			this.confirm({
+				plugin: true,
+				name: 'pluginTemplate',
+				message: 'Would you like to use plugins in the new generator?',
+				default: true,
+			})
       this.input({
         name: 'username',
         message: 'What is your GitHub username',
@@ -39,6 +45,7 @@ export = {
   actions() {
     this.add({
       files: '**',
+			transformExclude: ['template/**']
     }),
     this.move({
       patterns: {
