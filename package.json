@@ -1,6 +1,6 @@
 {
   "name": "grit-generator",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Scaffold out a new generator",
   "license": "MIT",
   "keywords": [
