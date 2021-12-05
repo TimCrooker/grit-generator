@@ -9,7 +9,7 @@ export = {
         message: 'What is the name of the project',
         default: path.basename(grit.outDir),
         filter: val => val.toLowerCase(),
-				validate: (input) => validate(input)
+				validate: (input) => validate(input).validForNewPackages
       }),
       this.input({
         name: 'description',
