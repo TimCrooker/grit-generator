@@ -1,5 +1,6 @@
 import { GeneratorConfig } from 'grit-cli'
 import path from 'path'
+import validate from 'validate-npm-package-name'
 
 export = { 
 	prompts(grit) {
@@ -8,6 +9,7 @@ export = {
         message: 'What is the name of the project',
         default: path.basename(grit.outDir),
         filter: val => val.toLowerCase(),
+				validate: (input) => validate(input)
       }),
       this.input({
         name: 'description',
