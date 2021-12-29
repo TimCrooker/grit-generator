@@ -20,7 +20,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "grit-cli": "^0.5.5",
+    "grit-cli": "^0.5.8",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
