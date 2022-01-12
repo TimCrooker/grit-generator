@@ -1,6 +1,6 @@
 {
   "name": "grit-generator",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Scaffold out a new generator",
   "main": "lib/grit-generator.js",
   "license": "MIT",
