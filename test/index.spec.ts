@@ -1,4 +1,4 @@
-import { getGenerator } from 'grit-cli';
+import { getGenerator } from 'gritenv';
 import path from 'path'
 
 const generator = path.resolve(__dirname, '../')

@@ -1,7 +1,7 @@
-import { GeneratorConfig } from 'grit-cli'
+import { Generator, GeneratorConfig } from 'gritenv'
 import path from 'path'
 
-export = { 
+const config = { 
 	prompts(grit) {
       this.input({
         name: 'name',
@@ -56,3 +56,5 @@ export = {
     grit.showProjectTips()
   }
 } as GeneratorConfig
+
+export = new Generator(config)

@@ -1,15 +1,18 @@
-import { GeneratorConfig } from 'grit-cli'
+import { Generator } from 'gritenv'
 import path from 'path'
 import validate from 'validate-npm-package-name'
 
-export = { 
+export = new Generator({ 
 	prompts(grit) {
       this.input({
         name: 'name',
         message: 'What is the name of the project',
         default: path.basename(grit.outDir),
         filter: val => val.toLowerCase(),
-				validate: (input) => validate(input).validForNewPackages
+				validate: (input) => {
+					if(!validate(input).validForNewPackages) return 'Invalid npm package name'
+					return true
+				}
       }),
       this.input({
         name: 'description',
@@ -61,4 +64,4 @@ export = {
     await grit.npmInstall()
     grit.showProjectTips()
   }
-} as GeneratorConfig
+})
