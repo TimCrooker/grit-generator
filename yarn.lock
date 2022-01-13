@@ -2574,10 +2574,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
-gritenv@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/gritenv/-/gritenv-0.3.5.tgz#ab4b7ab92b9c558b37ff687e7d5fd3c5db1937de"
-  integrity sha512-Z7xy54yEeD5eQlQfl1lLvDd90qyZeQlEm8jqs8f+/V0HLkef71uT5xd39xTYp6gu9LjveqK35RGXCE2Yl3zLSg==
+gritenv@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/gritenv/-/gritenv-0.3.7.tgz#ae3398f7b57e47f03760279d7d82580697b83150"
+  integrity sha512-5RUUuxqfeLUY0fdwWF2TDpok2HQjgwo9JYZ4/CYWWUOOVbnsRNpVVxmC/3rks2DO4/l0uknkF4dkSw7+eCj9lw==
   dependencies:
     axios "^0.24.0"
     chalk "^4.1.2"
@@ -2605,6 +2605,7 @@ gritenv@^0.3.5:
     resolve-from "^5.0.0"
     rimraf "^3.0.2"
     update-notifier "^5.1.0"
+    youtill "^0.2.5"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -3969,6 +3970,11 @@ parse-json@5.2.0, parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+parse-package-name@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/parse-package-name/-/parse-package-name-0.1.0.tgz#3f44dd838feb4c2be4bf318bae4477d7706bade4"
+  integrity sha1-P0Tdg4/rTCvkvzGLrkR313BrreQ=
+
 parse-package-name@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-package-name/-/parse-package-name-1.0.0.tgz#1a108757e4ffc6889d5e78bcc4932a97c097a5a7"
@@ -4593,6 +4599,13 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
+swaglog@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/swaglog/-/swaglog-1.0.5.tgz#baf46465b4c679d2886646b5adbd43445f644113"
+  integrity sha512-OA0dMmdpeuUG2CXCXzKSvBbWJPEOnQIDXpB38Hw9CzDs4qwybo1CmTHaMUlyiFwdvVnch4yvS5KBxdT6HlTpFA==
+  dependencies:
+    chalk "^4.1.2"
+
 symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
@@ -5010,3 +5023,28 @@ yargs@^16.2.0:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+youtill@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/youtill/-/youtill-0.2.5.tgz#b9c7e900fa0d9c6d4642ae77ec4e62d5e331a456"
+  integrity sha512-zequ+v+PED2+UCXeJ9BhaT/YivTIb4z+uwCyJklPy3K7lrw3SRxNHTt2tZnLNg/1XC+iSgsiNRAEQnl4p5VmzQ==
+  dependencies:
+    axios "^0.24.0"
+    chalk "^4.1.2"
+    chokidar "^3.5.2"
+    cp-file "^9.1.0"
+    cross-spawn "^7.0.3"
+    fs-extra "^9.1.0"
+    is-binary-path "^2.1.0"
+    joycon "^2.2.5"
+    lodash "^4.17.21"
+    log-update "^4.0.0"
+    majo "^0.10.1"
+    micromatch "4.0.4"
+    move-file "2.1.0"
+    open "^8.4.0"
+    ora "4.1.1"
+    parse-package-name "^0.1.0"
+    resolve-from "^5.0.0"
+    rimraf "^3.0.2"
+    swaglog "^1.0.5"

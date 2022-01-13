@@ -20,10 +20,10 @@
 		"start": "grit . output",
 		"build": "tsc",
 		"test": "jest",
-		"update:grit": "yarn add grit-cli@latest"
+		"update:grit": "yarn add gritenv@latest"
 	},
 	"dependencies": {
-		"gritenv": "^0.3.3"
+		"gritenv": "^0.3.7"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.16.0",
