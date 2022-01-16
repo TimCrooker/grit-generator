@@ -1,6 +1,6 @@
 {
   "name": "grit-generator",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Scaffold out a new generator",
   "main": "lib/grit-generator.js",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "gritenv": "^0.3.7",
+    "gritenv": "^0.3.9",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {

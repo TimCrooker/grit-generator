@@ -1,8 +1,8 @@
-import { Generator } from 'gritenv'
+import { Generator, GeneratorConfig } from 'gritenv'
 import path from 'path'
 import validate from 'validate-npm-package-name'
 
-export = new Generator({ 
+const config = { 
 	prompts(grit) {
       this.input({
         name: 'name',
@@ -64,4 +64,6 @@ export = new Generator({
     await grit.npmInstall()
     grit.showProjectTips()
   }
-})
+} as GeneratorConfig
+
+export = new Generator(config)

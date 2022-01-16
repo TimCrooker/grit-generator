@@ -2574,10 +2574,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
-gritenv@^0.3.7:
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/gritenv/-/gritenv-0.3.7.tgz#ae3398f7b57e47f03760279d7d82580697b83150"
-  integrity sha512-5RUUuxqfeLUY0fdwWF2TDpok2HQjgwo9JYZ4/CYWWUOOVbnsRNpVVxmC/3rks2DO4/l0uknkF4dkSw7+eCj9lw==
+gritenv@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/gritenv/-/gritenv-0.3.9.tgz#8d3bdd6b9e73b3da56183acac48a89af1ff95fc6"
+  integrity sha512-CO+mu8caaMNfegn4wMeGxIinD3d6bTNqISmjU0MwclnfRexjimW0OUIeH4WfaC2gnPahWmjXek9+/qPZ0U+6aA==
   dependencies:
     axios "^0.24.0"
     chalk "^4.1.2"
@@ -2605,7 +2605,7 @@ gritenv@^0.3.7:
     resolve-from "^5.0.0"
     rimraf "^3.0.2"
     update-notifier "^5.1.0"
-    youtill "^0.2.5"
+    youtill "^0.2.6"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -5024,10 +5024,10 @@ yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-youtill@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/youtill/-/youtill-0.2.5.tgz#b9c7e900fa0d9c6d4642ae77ec4e62d5e331a456"
-  integrity sha512-zequ+v+PED2+UCXeJ9BhaT/YivTIb4z+uwCyJklPy3K7lrw3SRxNHTt2tZnLNg/1XC+iSgsiNRAEQnl4p5VmzQ==
+youtill@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/youtill/-/youtill-0.2.6.tgz#c3a62da2b4dde678489aff18e32295425cbcfdc1"
+  integrity sha512-SsZVIW5RErpoZIusvmEeMcbjUEUuagOAUawcopzNjtbvaePUYpc7SlszN7yQHSIndR/qXt5nJOTEh4rBB6t1zA==
   dependencies:
     axios "^0.24.0"
     chalk "^4.1.2"

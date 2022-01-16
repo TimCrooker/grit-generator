@@ -36,9 +36,6 @@ const config = {
         store: true
       })
   },
-	plugins: {
-		mergeFiles: []
-	},
   actions() {
     this.add({ 
       files: '**',
