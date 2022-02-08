@@ -21,7 +21,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "gritenv": "^0.3.9",
+    "gritenv": "^0.5.1",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
